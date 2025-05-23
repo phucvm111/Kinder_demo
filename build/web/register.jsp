@@ -675,7 +675,7 @@
                         </div>
                         <!-- DOB -->
                         <div class="wrap-input100 validate-input">
-                            <input class="input100" type="date" name="dob" required />
+                            <input class="input100" type="date" name="dob" id="dob" required />
                             <span class="focus-input100"></span>
                             <span class="symbol-input100"><i class="fa-regular fa-calendar"></i>
                             </span>
@@ -738,6 +738,10 @@
                         <div class="message bubbles" id="emailinvalid">
                             <p>Emails must contain '@'</p>
                         </div>
+
+                        <div class="message bubbles" id="dobinvalid">
+                            <p>Year must be between 1900 and current year</p>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -749,7 +753,8 @@
             var lname = document.getElementById("lname");
             var phone = document.getElementById("phone");
             var email = document.getElementById("email");
-            var password = document.getElementById("password")
+            var password = document.getElementById("password");
+            var DOB = document.getElementById("dob")
 
             fname.onkeyup = function () {
                 var numbers = /[0-9]/g;
@@ -816,6 +821,22 @@
                     document.getElementById("emailinvalid").style.visibility = "visible";
                 }
             }
+            
+                        // Trong phần JavaScript, sửa lại hàm kiểm tra DOB
+            dob.onchange = function () {
+                var dobDate = new Date(dob.value);
+                var currentDate = new Date();
+                var minDate = new Date('1900-01-01');
+
+                // Kiểm tra năm hợp lệ (1900 <= năm <= năm hiện tại)
+                if (dobDate < minDate || dobDate > currentDate || dob.value.substring(0, 4) === '0000') {
+                    document.getElementById("dobinvalid").style.visibility = "visible";
+                } else {
+                    document.getElementById("dobinvalid").style.visibility = "hidden";
+                }
+            }
+
+
         </script>
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
                 integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous">

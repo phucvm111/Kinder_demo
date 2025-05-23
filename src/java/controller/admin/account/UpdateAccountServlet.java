@@ -58,8 +58,12 @@ public class UpdateAccountServlet extends HttpServlet {
         Role r = rd.getRoleByID(Integer.parseInt(request.getParameter("slRole")));
         ac.setRole(r);
         ac.setAccountID(Integer.parseInt(request.getParameter("ida")));
-
+        RoleDAO rdao = new RoleDAO();
+        List<Role> roles = rdao.getAllRoles();
         PrintWriter out = response.getWriter();
+        request.setAttribute("listR", roles);
+
+        
         out.println(ac);
         ad.updateAccount(ac);
         response.sendRedirect("listaccount");
