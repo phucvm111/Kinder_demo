@@ -220,6 +220,10 @@
         <servlet-name>ChildUpdateServlet</servlet-name>
         <servlet-class>controller.parent.ChildUpdateServlet</servlet-class>
     </servlet>
+    <servlet>
+        <servlet-name>ChangePasswordServlet</servlet-name>
+        <servlet-class>controller.ChangePasswordServlet</servlet-class>
+    </servlet>
     <servlet-mapping>
         <servlet-name>LoginServlet</servlet-name>
         <url-pattern>/login</url-pattern>
@@ -463,6 +467,10 @@
     <servlet-mapping>
         <servlet-name>ChildUpdateServlet</servlet-name>
         <url-pattern>/childupdateservlet</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>ChangePasswordServlet</servlet-name>
+        <url-pattern>/changepassword</url-pattern>
     </servlet-mapping>
     <session-config>
         <session-timeout>

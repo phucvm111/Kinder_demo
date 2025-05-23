@@ -42,6 +42,9 @@
                                 <li class="menu-item  current1">
                                     <a href="/ATKD_Project/homepage/parent/childregister.jsp">Child Register</a>
                                 </li>
+                                <li class="menu-item  current1">
+                                    <a href="/ATKD_Project/homepage/parent/changepassword">Change Password</a>
+                                </li>
                             </ul>
                         </div>
                         <div style="border-top: 3px solid gray;"></div>
