@@ -35,6 +35,9 @@
                                 <li class="menu-item">
                                     <a href="/ATKD_Project/homepage/childregister">Child Register</a>
                                 </li>
+                                  <li class="menu-item">
+                                    <a href="/ATKD_Project/homepage/changepassword">Change Password</a>
+                                </li>
                             </ul>
                         </div>
                         <div style="border-top: 3px solid gray;"></div>

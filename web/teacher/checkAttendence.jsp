@@ -38,6 +38,9 @@
                                 <li class="menu-item ">
                                     <a href="attendance">Home</a>
                                 </li>
+                                 <li class="menu-item ">
+                                    <a href="changepassword">Change Password</a>
+                                </li>
                                 <!--                                <li class="menu-item">
                                                                     <a href="">View schedule</a>
                                                                 </li>-->
