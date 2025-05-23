@@ -44,9 +44,10 @@
                                 <li class="menu-item current1">
                                     <a href="attendance" style="color: #fff;">Home</a>
                                 </li>
-                                <!--                                <li class="menu-item">
-                                                                    <a href="#">View schedule</a>
-                                                                </li>-->
+                                <li class="menu-item current1">
+                                    <a href="changepassword" style="color: #fff;">Change Password</a>
+                                </li>
+                               
                             </ul>
                         </div>
                         <div class="log-out">

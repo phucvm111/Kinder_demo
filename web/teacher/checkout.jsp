@@ -44,6 +44,9 @@
                                 <li class="menu-item current1">
                                     <a href="attendance" style="color: #fff;">Home</a>
                                 </li>
+                                <li class="menu-item current1">
+                                    <a href="changepassword" style="color: #fff;">Change Password</a>
+                                </li>
                                 <!--                                <li class="menu-item">
                                                                     <a href="schedule.html">View schedule</a>
                                                                 </li>-->

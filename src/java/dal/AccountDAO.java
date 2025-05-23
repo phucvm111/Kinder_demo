@@ -265,6 +265,19 @@ public class AccountDAO extends DBContext {
         return null;
     }
 
+    public void changePassword(String mail, String pass) {
+        try {
+            String sql = "UPDATE Account SET password = ? WHERE email = ?";
+            connection = new DBContext().getConnection();
+            ps = connection.prepareStatement(sql);
+            ps.setString(1, pass); 
+            ps.setString(2, mail);  
+            ps.executeUpdate();
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+    }
+
     public Account getAccountByID(int id) {
         try {
             String sql = "select * from Account where account_id = ?";
@@ -501,10 +514,8 @@ public class AccountDAO extends DBContext {
 
     }
 
-    public static void main(String[] args) {
-        AccountDAO dao = new AccountDAO();
-     Account get=dao.getAccountByEmail("john.doe@example.com");
-        System.out.println(get);
+ 
+      
 //        AccountDAO d = new AccountDAO();
 //            Account a = new Account();
 //            a.setFirstName("Alex");
@@ -539,4 +550,4 @@ public class AccountDAO extends DBContext {
 //        dao.addGoogleAccount(a);
 //        System.out.println(role);
     }
-}
+
