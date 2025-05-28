@@ -224,6 +224,18 @@
         <servlet-name>ChangePasswordServlet</servlet-name>
         <servlet-class>controller.ChangePasswordServlet</servlet-class>
     </servlet>
+    <servlet>
+        <servlet-name>SendOtpServlet</servlet-name>
+        <servlet-class>controller.SendOtpServlet</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>EnterOTPServlet</servlet-name>
+        <servlet-class>controller.EnterOTPServlet</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>ResetPasswordServlet</servlet-name>
+        <servlet-class>controller.ResetPasswordServlet</servlet-class>
+    </servlet>
     <servlet-mapping>
         <servlet-name>LoginServlet</servlet-name>
         <url-pattern>/login</url-pattern>
@@ -471,6 +483,18 @@
     <servlet-mapping>
         <servlet-name>ChangePasswordServlet</servlet-name>
         <url-pattern>/changepassword</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>SendOtpServlet</servlet-name>
+        <url-pattern>/sendotp</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>EnterOTPServlet</servlet-name>
+        <url-pattern>/enterotp</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>ResetPasswordServlet</servlet-name>
+        <url-pattern>/resetpassword</url-pattern>
     </servlet-mapping>
     <session-config>
         <session-timeout>
