@@ -513,6 +513,13 @@ public class AccountDAO extends DBContext {
         }
 
     }
+    public static void main(String[] args) {
+        AccountDAO d= new AccountDAO();
+        List<String> emails= d.getAllEmail();
+        for(String em:emails){
+            System.out.println(em);
+        }
+    }
 
  
       

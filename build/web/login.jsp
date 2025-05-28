@@ -71,7 +71,10 @@
 
                     <!--<br/>-->
                     <button>Sign In</button>
+                     <a href="ForgetPassword.jsp" style="color: blue; text-decoration: underline;">Forget Password</a>
+
                 </form>
+                   
             </div>
             <div class="overlay-container">
                 <div class="overlay">
@@ -86,6 +89,9 @@
                         <button class="ghost" id="signUp">
                             <a href="register">Sign Up</a>
                         </button>
+                        
+                       
+                        
                     </div>
                 </div>
             </div>
